@@ -370,6 +370,9 @@ on post-fs-data
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_min
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
 
+    chown system system /sys/class/timed_output/vibrator/vtg_level    
+    chmod 0660 /sys/class/timed_output/vibrator/vtg_level
+
     # Chown polling nodes as needed from UI running on system server
     chown system system /sys/devices/platform/msm_sdcc.1/polling
     chown system system /sys/devices/platform/msm_sdcc.2/polling
