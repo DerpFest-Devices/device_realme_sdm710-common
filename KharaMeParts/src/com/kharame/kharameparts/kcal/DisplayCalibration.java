@@ -82,6 +82,7 @@ public class DisplayCalibration extends PreferenceActivity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context = this;
         mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);

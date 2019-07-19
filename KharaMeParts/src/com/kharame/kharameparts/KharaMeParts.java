@@ -31,6 +31,7 @@ import android.app.Fragment;
 
 import com.kharame.kharameparts.settings.ScreenOffGestureSettings;
 import com.kharame.kharameparts.gestures.AmbientGesturePreferenceActivity;
+import com.kharame.kharameparts.kcal.DisplayCalibration;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -49,6 +50,7 @@ public class KharaMeParts extends PreferenceFragment implements
     private static final boolean DEBUG = true;
     private static final String TAG = "KharaMeParts";
 
+    private Preference mKcalPref;
     private Preference mAmbientPref;
     private Preference mGesturesPref;
     private Context mContext;
@@ -71,6 +73,16 @@ public class KharaMeParts extends PreferenceFragment implements
                      @Override
                      public boolean onPreferenceClick(Preference preference) {
                          Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
+                         startActivity(intent);
+                         return true;
+                     }
+                });
+
+	mKcalPref = findPreference("kcal");
+                mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                     @Override
+                     public boolean onPreferenceClick(Preference preference) {
+                         Intent intent = new Intent(getContext(), DisplayCalibration.class);
                          startActivity(intent);
                          return true;
                      }
