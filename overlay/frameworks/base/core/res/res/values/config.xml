@@ -486,9 +486,9 @@
     <bool name="config_needCustomFODView">true</bool>
 
     <!-- Paths to the libraries that contain device specific key handlers -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/RealmeParts/RealmeParts.apk</string>
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/KharaMeParts/KharaMeParts.apk</string>
 
     <!-- Names of the key handler classes -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">com.realme.realmeparts.KeyHandler</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.kharame.kharameparts.KeyHandler</string>
 
 </resources>
