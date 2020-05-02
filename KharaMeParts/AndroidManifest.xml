@@ -90,6 +90,14 @@
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
           </intent-filter>
         </activity>
+
+	<activity
+            android:name=".vibration.VibrationActivity"
+            android:label="@string/misc_tweaks">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

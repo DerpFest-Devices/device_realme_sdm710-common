@@ -36,4 +36,13 @@
                 android:title="@string/kcal_title" />
      </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/category_misc">
+
+        <PreferenceScreen
+                android:key="vibration"
+                android:fragment="com.kharame.kharameparts.vibration.VibrationActivity"
+                android:title="@string/misc_tweaks"	    
+            android:icon="@drawable/ic_vibrate" />
+    </PreferenceCategory>
 </PreferenceScreen>

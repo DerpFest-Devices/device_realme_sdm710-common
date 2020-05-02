@@ -1,6 +1,5 @@
 /*
  *  KharaMeeParts
- *  by SagarMakhar & BabluS
  */
 
 package com.kharame.kharameparts;
@@ -32,6 +31,7 @@ import android.app.Fragment;
 import com.kharame.kharameparts.settings.ScreenOffGestureSettings;
 import com.kharame.kharameparts.gestures.AmbientGesturePreferenceActivity;
 import com.kharame.kharameparts.kcal.DisplayCalibration;
+import com.kharame.kharameparts.vibration.VibrationActivity;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -53,6 +53,7 @@ public class KharaMeParts extends PreferenceFragment implements
     private Preference mKcalPref;
     private Preference mAmbientPref;
     private Preference mGesturesPref;
+    private Preference mVibrationPref;
     private Context mContext;
     private SharedPreferences mPreferences;
 
@@ -83,6 +84,16 @@ public class KharaMeParts extends PreferenceFragment implements
                      @Override
                      public boolean onPreferenceClick(Preference preference) {
                          Intent intent = new Intent(getContext(), DisplayCalibration.class);
+                         startActivity(intent);
+                         return true;
+                     }
+                });
+
+	mVibrationPref = findPreference("vibration");
+                mVibrationPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                     @Override
+                     public boolean onPreferenceClick(Preference preference) {
+                         Intent intent = new Intent(getContext(), VibrationActivity.class);
                          startActivity(intent);
                          return true;
                      }

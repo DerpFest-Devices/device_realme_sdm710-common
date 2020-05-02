@@ -113,4 +113,10 @@
     <string name="kcal_hue">Hue</string>
     <string name="kcal_value">Value</string>
 
+    <!-- Vibration Slider -->
+    <string name="misc_tweaks">Misc Tweaks</string>
+    <string name="category_misc">Misc</string>
+    <string name="vibrator_intensity_control">Vibration Intensity Control</string>
+    <string name="vibration_slider"></string>
+
 </resources>
