@@ -26,23 +26,4 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-            android:title="@string/kcal">
-         <PreferenceScreen
-                android:key="kcal"
-                android:fragment="com.lineageos.settings.lepref.DisplayCalibration"
-                android:summary="@string/kcal_summary"
-                android:icon="@drawable/ic_kcal"
-                android:title="@string/kcal_title" />
-     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/category_misc">
-
-        <PreferenceScreen
-                android:key="vibration"
-                android:fragment="com.kharame.kharameparts.vibration.VibrationActivity"
-                android:title="@string/misc_tweaks"	    
-            android:icon="@drawable/ic_vibrate" />
-    </PreferenceCategory>
 </PreferenceScreen>

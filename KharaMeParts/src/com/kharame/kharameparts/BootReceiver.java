@@ -27,8 +27,6 @@ import com.kharame.kharameparts.KernelControl;
 import com.kharame.kharameparts.settings.ScreenOffGesture;
 import com.kharame.kharameparts.util.Utils;
 import com.kharame.kharameparts.gestures.SensorsDozeService;
-import com.kharame.kharameparts.kcal.DisplayCalibration;
-import com.kharame.kharameparts.vibration.VibratorStrengthPreference;
 import java.io.File;
 import androidx.preference.PreferenceManager;
 
@@ -63,8 +61,6 @@ private void restore(String file, String value) {
                         ScreenOffGesture.PREF_GESTURE_ENABLE, true));
             }
 		context.startService(new Intent(context, SensorsDozeService.class));
-		context.startService(new Intent(context, DisplayCalibration.class));
-                VibratorStrengthPreference.restore(context);
     }
 
     private String getPreferenceString(Context context, String key, String defaultValue) {
